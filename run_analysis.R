@@ -101,4 +101,7 @@ CreateSummaryOfTidyDataset <- function(dataset) {
     
     # Create a summary table
     summary <- dcast(melted, subject + activity ~ variable, mean)
+    
+    # Return the result
+    summary
 }
